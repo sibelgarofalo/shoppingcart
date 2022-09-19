@@ -27,7 +27,7 @@ shoppingcard/
 │  │  ├─ tshirt/
 │  │  ├─ checkout/
 │  │  ├─ login/
-│  │  ├─ password-reset/
+│  │  ├─ passwordReset/
 │  │  ├─ register/
 │  ├─ components/
 │  │  ├─ header/
