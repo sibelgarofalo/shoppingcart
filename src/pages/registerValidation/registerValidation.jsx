@@ -11,7 +11,7 @@ function RegisterValidation() {
   const [passwordRepeat, setPasswordRepeat] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-
+  const [errorMessage, setErrorMessage] = useState('');
 
   const navigate = useNavigate();
 
@@ -26,16 +26,54 @@ function RegisterValidation() {
   const onCancelClick = () => {
     setEmail('');
     setPassword('');
+    setErrorMessage('');
   }
 
-  const onValidateClick = () => {
-
+  const onValidateClick = (e) => {
+    e.preventDefault();
+    if (email.length < 1) {
+      setErrorMessage('The email address is mandatory');
+      return;
+    }
+    if (userName.length < 1) {
+      setErrorMessage('The user name is mandatory');
+      return;
+    }
+    if (code.length < 1) {
+      setErrorMessage('The code is mandatory');
+      return;
+    }
+    if (password.length < 1) {
+      setErrorMessage('The password is mandatory');
+      return;
+    }
+    if (passwordRepeat.length < 1) {
+      setErrorMessage('The password is mandatory');
+      return;
+    }
+    if (firstName.length < 1) {
+      setErrorMessage('The first name is mandatory');
+      return;
+    }
+    if (lastName.length < 1) {
+      setErrorMessage('The last name is mandatory');
+      return;
+    }
+     setErrorMessage('');
   }
 
   return (
     <div className="registrationValidation">
-      <form>
+      <form onSubmit={onValidateClick}>
         <h3>Registration Validation</h3>
+        {
+          errorMessage.length > 0 &&
+          <div className='error-panel'>
+            <h6>There are some errors</h6>
+            <p>{errorMessage}</p>
+          </div>
+        }
+
         <div className="input-group">
           <label>Email</label>
           <input
@@ -94,8 +132,8 @@ function RegisterValidation() {
         <div className='buttons-group'>
           <button onClick={onResetClick} className='ghost'>Reset</button>
           <button onClick={onRegisterClick} className='ghost'>Register</button>
-          <button onClick={onCancelClick} className='cancel'>Cancel</button>
-          <button onClick={onValidateClick} className='positive'>Validate</button>
+          <button onClick={onCancelClick} className='cancel' type='button'>Cancel</button>
+          <button className='positive' type='submit'>Validate</button>
         </div>
       </form>
     </div>
