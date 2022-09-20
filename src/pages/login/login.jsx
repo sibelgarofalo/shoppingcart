@@ -1,9 +1,9 @@
 import './login.scss';
-function Login () {
-    
-    return (
-      <div className="login"></div>
-    );
-  }
+function Login() {
 
-  export default Login;
+  return (
+    <div className="login">Login</div>
+  );
+}
+
+export default Login;

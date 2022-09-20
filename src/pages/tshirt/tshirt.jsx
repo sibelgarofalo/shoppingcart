@@ -1,9 +1,14 @@
-import './tshirt.scss';
-function Tshirt () {
-    
-    return (
-      <div className="tshirt"></div>
-    );
-  }
+import { useParams } from 'react-router-dom';
 
-  export default Tshirt;
+import './tshirt.scss';
+
+function Tshirt() {
+
+  const { id } = useParams();
+
+  return (
+    <div className="tshirt">Tshirt is {id}</div>
+  );
+}
+
+export default Tshirt;

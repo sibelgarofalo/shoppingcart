@@ -1,9 +1,9 @@
 import './checkout.scss';
-function Checkout () {
-    
-    return (
-      <div className="checkout"></div>
-    );
-  }
+function Checkout() {
 
-  export default Checkout;
+  return (
+    <div className="checkout">Checkout</div>
+  );
+}
+
+export default Checkout;

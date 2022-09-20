@@ -1,9 +1,9 @@
 import './passwordReset.scss';
-function PasswordReset () {
-    
-    return (
-      <div className="passwordReset"></div>
-    );
-  }
+function PasswordReset() {
 
-  export default PasswordReset;
+  return (
+    <div className="passwordReset">Password reset</div>
+  );
+}
+
+export default PasswordReset;
