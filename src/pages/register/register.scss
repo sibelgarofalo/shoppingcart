@@ -1,3 +1,7 @@
+@import '../../styles/colors.scss';
+@import '../../styles/elements.scss';
+
 .register {
-    font-size: 16px;
+    font-size: $default-font-size;
+    color: $text-color;
 }
