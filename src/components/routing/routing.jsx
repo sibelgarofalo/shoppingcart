@@ -23,6 +23,7 @@ function Routing() {
           <Route path="/password-reset" element={<Pages.PasswordReset />} />
           <Route path="/checkout" element={<Pages.Checkout />} />
           <Route path="/tshirt/:id" element={<Pages.Tshirt />} />
+          <Route path="/register-validation" element={<Pages.RegisterValidation />} />
         </Routes>
       </BrowserRouter>
     </div>

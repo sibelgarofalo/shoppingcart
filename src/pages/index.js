@@ -4,6 +4,7 @@ import Login from './login/login';
 import PasswordReset from './passwordReset/passwordReset';
 import Register from './register/register';
 import Tshirt from './tshirt/tshirt';
+import RegisterValidation from './registerValidation/registerValidation';
 
 export {
     Checkout,
@@ -11,5 +12,6 @@ export {
     Login,
     PasswordReset,
     Register,
-    Tshirt
+    Tshirt,
+    RegisterValidation
 }

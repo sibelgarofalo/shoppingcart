@@ -7,11 +7,26 @@ form {
     border: 1px solid $border-color;
     padding: 12px;
 
+    h3 {
+        font-weight: 400;
+        font-size: 24px;
+    }
     .input-group {
         display: flex;
         flex-direction: column;
-        gap: 12px;
-        margin-bottom: 12px;
+        gap: 8px;
+        margin-bottom: 16px;
+
+        label {
+            font-weight: 500;
+        }
+
+        input {
+            font-size: 14px;
+            padding: 4px;
+            border: none;
+            border-bottom: 1px solid $border-color;
+        }
     }
 
     .buttons-group {
@@ -20,14 +35,20 @@ form {
         gap: 12px;
         justify-content: flex-end;
 
-        button,
-        input {
+        button{
             font-size: 16px;
             border-radius: 5px;
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         button.cancel {
             background-color: $cancel-background;
+            &:hover {
+                background-color: white;
+                border: 2px solid $cancel-background;
+            }
         }
 
         button.positive {
