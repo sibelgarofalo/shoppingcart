@@ -7,13 +7,33 @@ form {
     border: 1px solid $border-color;
     border-radius: 5px;
     padding: 12px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
     h3 {
         font-weight: 400;
         font-size: 24px;
         margin-top: 4px;
     }
+
+    .error-panel {
+        border: 2px solid $cancel-background;
+        border-radius: 5px;
+        color: $cancel-background;
+        padding: 8px;
+        font-size: 12px;
+        margin-bottom: 12px;
+
+        h6 {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
     .input-group {
         display: flex;
         flex-direction: column;
@@ -38,10 +58,11 @@ form {
         gap: 12px;
         justify-content: flex-end;
 
-        button{
+        button {
             font-size: 16px;
             border-radius: 5px;
             padding: 4px;
+
             &:hover {
                 cursor: pointer;
             }
@@ -49,6 +70,7 @@ form {
 
         button.cancel {
             background-color: $cancel-background;
+
             &:hover {
                 background-color: white;
                 border: 2px solid $cancel-background;
