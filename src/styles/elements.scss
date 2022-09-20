@@ -1,0 +1,42 @@
+@import './colors.scss';
+
+$default-font-size: 18px;
+
+form {
+    width: 350px;
+    border: 1px solid $border-color;
+    padding: 12px;
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .buttons-group {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        justify-content: flex-end;
+
+        button,
+        input {
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        button.cancel {
+            background-color: $cancel-background;
+        }
+
+        button.positive {
+            background-color: $positive-background;
+        }
+
+        button.ghost {
+            border: 1px solid $border-color;
+            background-color: white;
+        }
+    }
+}
