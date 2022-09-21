@@ -2,9 +2,20 @@
     "tshirts": [
         {
             "id": 1,
-            "image": "tshirt01.webp",
+            "image": "assets/tshirt01.webp",
             "price": 9.99,
             "name": "FITNESS TACO IN MY MOUTH MEN'S TSHIRT",
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": 2,
+            "image": "assets/tshirt01.webp",
+            "price": 19.99,
+            "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
                 "S",
                 "M",
