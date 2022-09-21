@@ -1,6 +1,10 @@
+/** Import redux */
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { loadTshirts } from '../../redux/shopping/slice';
+
+/** Import components */
+import Header from '../../components/header/header';
 
 import './home.scss';
 
@@ -18,14 +22,7 @@ function Home() {
 
   return (
     <div className="home">
-      {
-        state.tshirts.map((tshirt, index) => {
-          return <p>
-            {tshirt.name}
-            <img src={tshirt.image} alt={tshirt.name} width="150" />
-          </p>
-        })
-      }
+      <Header />
     </div>
   );
 }
