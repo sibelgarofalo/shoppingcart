@@ -7,6 +7,7 @@ import { loadTshirts } from '../../redux/shopping/slice';
 import Header from '../../components/header/header';
 
 import './home.scss';
+import TshirtDetails from '../../components/tshirtDetails/tshirtDetails';
 
 function Home() {
 
@@ -23,6 +24,11 @@ function Home() {
   return (
     <div className="home">
       <Header />
+      <div className="tshirtGrid">
+        {
+          state.tshirts.map((item, index) => <TshirtDetails key={index} tshirt={item} />)
+        }
+      </div>
     </div>
   );
 }

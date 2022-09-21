@@ -1,9 +1,21 @@
+import { useNavigate } from 'react-router-dom';
+
 import './tshirtDetails.scss';
-function TshirtDetails () {
-    
-    return (
-      <div className="tshirtDetails"></div>
-    );
+
+function TshirtDetails(props) {
+
+  const navigate = useNavigate();
+
+  const onTshirtClick = () => {
+    navigate(`/tshirt/${props.tshirt.id}`);
   }
 
-  export default TshirtDetails;
+  return (
+    <div className="tshirtDetails" onClick={onTshirtClick}>
+      <h6>{props.tshirt.name}</h6>
+      <img src={props.tshirt.image} alt={props.tshirt.name} />
+    </div>
+  );
+}
+
+export default TshirtDetails;
