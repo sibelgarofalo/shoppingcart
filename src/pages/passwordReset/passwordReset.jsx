@@ -52,6 +52,13 @@ function PasswordReset() {
             <p>{reduxState.error}</p>
           </div>
         }
+        {
+          reduxState.isSuccess &&
+          <div className='success-panel'>
+            <h6>Password reset complete</h6>
+            <p>You can now go to the Login Page</p>
+          </div>
+        }
 
         <div className="input-group">
           <label>Email address</label>

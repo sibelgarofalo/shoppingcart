@@ -34,6 +34,25 @@ form {
         }
     }
 
+    .success-panel {
+        border: 2px solid $positive-background;
+        border-radius: 5px;
+        color: $positive-background;
+        padding: 8px;
+        font-size: 12px;
+        margin-bottom: 12px;
+
+        h6 {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
     .input-group {
         display: flex;
         flex-direction: column;

@@ -13,9 +13,8 @@ const resetPassword = createAsyncThunk(
                         'Content-Type': 'application/json'
                     }
                 });
-            const data = await httpResponse.json();
-            if (httpResponse.status === 200) {
-                return thunkAPI.fulfillWithValue(data);
+            if (httpResponse.ok) {
+                return thunkAPI.fulfillWithValue();
             }
             return thunkAPI.rejectWithValue('The email provided is not available');
         } catch (error) {

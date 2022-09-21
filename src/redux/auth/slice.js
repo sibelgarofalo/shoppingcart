@@ -4,6 +4,7 @@ import { resetPassword } from './actions';
 const initialState = {
     isUserLoggedIn: false,
     isLoading: false,
+    isSuccess: false,
     error: '',
     user: {
         firstName: '',
@@ -21,13 +22,16 @@ export const authSlice = createSlice({
     extraReducers: (builder) => {
         builder.addCase(resetPassword.pending, (state, action) => {
             state.isLoading = true;
+            state.isSuccess = false;
             state.error = '';
         });
         builder.addCase(resetPassword.fulfilled, (state, action) => {
             state.isLoading = false;
+            state.isSuccess = true;
         });
         builder.addCase(resetPassword.rejected, (state, action) => {
             state.isLoading = false;
+            state.isSuccess = false;
             state.error = action.payload;
         });
     }
