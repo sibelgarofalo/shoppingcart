@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { login } from '../../redux/auth/actions';
 
 import './login.scss';
 
@@ -7,6 +9,8 @@ function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const dispatch = useDispatch();
+  const reduxState = useSelector(state => state.auth);
 
   const navigate = useNavigate();
 
@@ -36,17 +40,38 @@ function Login() {
     }
     setErrorMessage('');
     // call redux/axios
+    dispatch(login({
+      email: email,
+      password: password
+    }));
   }
 
   return (
     <div className="login">
       <form onSubmit={onLoginClick}>
         <h3>Login user</h3>
+        {/* Form validation error */}
         {
           errorMessage.length > 0 &&
           <div className='error-panel'>
             <h6>There are some errors</h6>
             <p>{errorMessage}</p>
+          </div>
+        }
+        {/* Login API error */}
+        {
+          reduxState.error.length > 0 &&
+          <div className='error-panel'>
+            <h6>Authentication error</h6>
+            <p>{reduxState.error}</p>
+          </div>
+        }
+        {
+          reduxState.isSuccess &&
+          <div className='success-panel'>
+            <h6>Welcome</h6>
+            <p>Hello {reduxState.user.first_name}, {reduxState.user.last_name}</p>
+            <p>You can now go to <Link to="/">our Store</Link></p>
           </div>
         }
         <div className="input-group">

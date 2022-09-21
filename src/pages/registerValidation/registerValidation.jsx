@@ -59,11 +59,11 @@ function RegisterValidation() {
       setErrorMessage('The last name is mandatory');
       return;
     }
-     setErrorMessage('');
+    setErrorMessage('');
   }
 
   return (
-    <div className="registrationValidation">
+    <div className="registerValidation">
       <form onSubmit={onValidateClick}>
         <h3>Registration Validation</h3>
         {
@@ -83,51 +83,51 @@ function RegisterValidation() {
         </div>
         <div className="input-group">
           <label>Username</label>
-          <input 
-          type="text" 
-          placeholder='Insert your User Name' 
-          value={userName} 
-          onChange={(args) => setUserName(args.target.value)} />
+          <input
+            type="text"
+            placeholder='Insert your User Name'
+            value={userName}
+            onChange={(args) => setUserName(args.target.value)} />
         </div>
         <div className="input-group">
           <label>Code</label>
-          <input 
-          type="text" 
-          placeholder='Insert your Code' 
-          value={code} 
-          onChange={(args) => setCode(args.target.value)} />
+          <input
+            type="text"
+            placeholder='Insert your Code'
+            value={code}
+            onChange={(args) => setCode(args.target.value)} />
         </div>
         <div className="input-group">
           <label>Password</label>
-          <input 
-          type="Password" 
-          placeholder='Insert your Password' 
-          value={password} 
-          onChange={(args) => setPassword(args.target.value)} />
+          <input
+            type="Password"
+            placeholder='Insert your Password'
+            value={password}
+            onChange={(args) => setPassword(args.target.value)} />
         </div>
         <div className="input-group">
           <label>Password Repeat</label>
-          <input 
-          type="Password" 
-          placeholder='Repeat your Password' 
-          value={passwordRepeat} 
-          onChange={(args) => setPasswordRepeat(args.target.value)} />
+          <input
+            type="Password"
+            placeholder='Repeat your Password'
+            value={passwordRepeat}
+            onChange={(args) => setPasswordRepeat(args.target.value)} />
         </div>
         <div className="input-group">
           <label>First Name</label>
-          <input 
-          type="text" 
-          placeholder='Insert your First Name' 
-          value={firstName} 
-          onChange={(args) => setFirstName(args.target.value)} />
+          <input
+            type="text"
+            placeholder='Insert your First Name'
+            value={firstName}
+            onChange={(args) => setFirstName(args.target.value)} />
         </div>
         <div className="input-group">
           <label>Last Name</label>
-          <input 
-          type="text" 
-          placeholder='Insert your Last Name' 
-          value={lastName} 
-          onChange={(args) => setLastName(args.target.value)} />
+          <input
+            type="text"
+            placeholder='Insert your Last Name'
+            value={lastName}
+            onChange={(args) => setLastName(args.target.value)} />
         </div>
         <div className='buttons-group'>
           <button onClick={onResetClick} className='ghost'>Reset</button>

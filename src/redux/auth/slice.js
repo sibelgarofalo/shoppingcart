@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { resetPassword } from './actions';
+import { resetPassword, login } from './actions';
 
 const initialState = {
     isUserLoggedIn: false,
@@ -7,9 +7,11 @@ const initialState = {
     isSuccess: false,
     error: '',
     user: {
-        firstName: '',
-        lastName: '',
-        email: ''
+        id: 0,
+        email: '',
+        first_name: '',
+        last_name: '',
+        username: '',
     }
 }
 
@@ -20,6 +22,7 @@ export const authSlice = createSlice({
 
     },
     extraReducers: (builder) => {
+        /** Reset password actions */
         builder.addCase(resetPassword.pending, (state, action) => {
             state.isLoading = true;
             state.isSuccess = false;
@@ -34,6 +37,27 @@ export const authSlice = createSlice({
             state.isSuccess = false;
             state.error = action.payload;
         });
+        /** Login actions */
+        builder.addCase(login.pending, (state, action) => {
+            state.isLoading = true;
+            state.isSuccess = false;
+            state.isUserLoggedIn = false;
+            state.error = '';
+        });
+        builder.addCase(login.fulfilled, (state, action) => {
+            state.isLoading = false;
+            state.isSuccess = true;
+            state.isUserLoggedIn = true;
+            state.error = '';
+            state.user = action.payload;
+        });
+        builder.addCase(login.rejected, (state, action) => {
+            state.isLoading = false;
+            state.isSuccess = false;
+            state.isUserLoggedIn = false;
+            state.error = action.payload;
+        });
+
     }
 })
 
