@@ -3,8 +3,8 @@
         {
             "id": 1,
             "image": "assets/tshirt01.webp",
-            "price": 9.99,
-            "name": "FITNESS TACO IN MY MOUTH MEN'S TSHIRT",
+            "price": 19.99,
+            "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
                 "S",
                 "M",
@@ -32,6 +32,139 @@
                 "M",
                 "L"
             ]
+        },
+        {
+            "id": 4,
+            "image": "assets/tshirt04.webp",
+            "price": 19.99,
+            "name": "MOUTH MEN'S TSHIRT",
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": 5,
+            "image": "assets/tshirt05.webp",
+            "price": 19.99,
+            "name": "MOUTH MEN'S TSHIRT",
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": 6,
+            "image": "assets/tshirt06.webp",
+            "price": 19.99,
+            "name": "MOUTH MEN'S TSHIRT",
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": 7,
+            "image": "assets/tshirt07.webp",
+            "price": 19.99,
+            "name": "MOUTH MEN'S TSHIRT",
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": 8,
+            "image": "assets/tshirt08.webp",
+            "price": 19.99,
+            "name": "MOUTH MEN'S TSHIRT",
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": 9,
+            "image": "assets/tshirt09.webp",
+            "price": 19.99,
+            "name": "MOUTH MEN'S TSHIRT",
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": 10,
+            "image": "assets/tshirt10.webp",
+            "price": 19.99,
+            "name": "MOUTH MEN'S TSHIRT",
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": 11,
+            "image": "assets/tshirt11.webp",
+            "price": 19.99,
+            "name": "MOUTH MEN'S TSHIRT",
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": 12,
+            "image": "assets/tshirt12.webp",
+            "price": 19.99,
+            "name": "MOUTH MEN'S TSHIRT",
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": 13,
+            "image": "assets/tshirt13.webp",
+            "price": 19.99,
+            "name": "MOUTH MEN'S TSHIRT",
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": 14,
+            "image": "assets/tshirt14.webp",
+            "price": 19.99,
+            "name": "MOUTH MEN'S TSHIRT",
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": 15,
+            "image": "assets/tshirt15.webp",
+            "price": 19.99,
+            "name": "MOUTH MEN'S TSHIRT",
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ]
         }
+
     ]
 }
