@@ -9,6 +9,12 @@ const initialState = {
     }
 };
 
+const calculateTotal = (items) => {
+    return items
+        .map(item => item.price)
+        .reduce((prev, next) => prev + next, 0);
+}
+
 export const shoppingSlice = createSlice({
     name: 'shopping',
     initialState,
@@ -19,8 +25,9 @@ export const shoppingSlice = createSlice({
         },
         // add an item to the shopping cart
         addItemToShoppingCart: (state, action) => {
-            // it adds a new item into the shopping cart list
-            // it recalculates the total
+            state.shoppingCart.items.push(action.payload);
+            // calculate total
+            state.total = calculateTotal(state.shoppingCart.items);
         },
         // add an item to the shopping cart
         removeItemFromShoppingCart: (state, action) => {
@@ -37,6 +44,6 @@ export const shoppingSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { loadTshirts } = shoppingSlice.actions
+export const { loadTshirts, addItemToShoppingCart } = shoppingSlice.actions
 
 export default shoppingSlice.reducer
