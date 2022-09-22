@@ -4,9 +4,14 @@
     border: 1px solid $border-color;
     width: 200px;
     height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
     img {
-        width:150px;
+    width:150px;
+        
     }
 
     &:hover {

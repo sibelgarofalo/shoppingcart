@@ -25,8 +25,10 @@ function Tshirt() {
 
   return (
     <div className="tshirt">
-      Tshirt is {id} <br />
-      The Tshirt name is {tshirt.name}
+      {id} <br />
+      {tshirt.name} <br/>
+      
+      
     </div>
   );
 }
