@@ -23,7 +23,7 @@ function Header() {
         {
           reduxState.isUserLoggedIn &&
           <NavLink to="/checkout">
-            You have: <strong>{reduxShoppingState.shoppingCart.items.length} items</strong>, total is: <strong>{reduxShoppingState.total} $</strong>
+            You have: <strong>{reduxShoppingState.shoppingCart.items.length} items</strong>, total is: <strong>{(reduxShoppingState.total).toFixed(2)} $</strong>
           </NavLink>
         }
       </div>

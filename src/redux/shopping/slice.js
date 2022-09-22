@@ -35,7 +35,7 @@ export const shoppingSlice = createSlice({
             // it recalculates the total
         },
         // change the amount of an item
-        changeItemQuantityInShoppingCart: (state, action) => {
+        addMoreItemQuantityInShoppingCart: (state, action) => {
             // find the item in the shopping cart
             // change the quantity
             // update the total
@@ -44,6 +44,6 @@ export const shoppingSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { loadTshirts, addItemToShoppingCart } = shoppingSlice.actions
+export const { loadTshirts, addItemToShoppingCart, removeItemFromShoppingCart, addMoreItemQuantityInShoppingCart } = shoppingSlice.actions
 
 export default shoppingSlice.reducer
