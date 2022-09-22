@@ -14,6 +14,7 @@ function TshirtDetails(props) {
     <div className="tshirtDetails" onClick={onTshirtClick}>
       <h6>{props.tshirt.name}</h6>
       <img src={props.tshirt.image} alt={props.tshirt.name} />
+      
     </div>
   );
 }
