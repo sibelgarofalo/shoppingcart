@@ -25,10 +25,25 @@ function Tshirt() {
 
   return (
     <div className="tshirt">
-      {id} <br />
-      {tshirt.name} <br/>
-      
-      
+      <img src={tshirt.image} alt={tshirt.name} />
+      <div className="details">
+        <h3>Name</h3>
+        <h4>{tshirt.name}</h4>
+        <h3>Price</h3>
+        <h4>{tshirt.price} $</h4>
+        <h3>Sizes</h3>
+        <div className='sizes'>
+          {
+            tshirt.sizes
+              .map((item, index) =>
+                <button className="ghost" key={index}>{item}</button>)
+          }
+        </div>
+        <div className='buttons-group'>
+          <button className='ghost'>Back to List</button>
+          <button className='positive'>Add to Cart</button>
+        </div>
+      </div>
     </div>
   );
 }
