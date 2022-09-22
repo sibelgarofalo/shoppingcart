@@ -12,9 +12,9 @@ function TshirtDetails(props) {
 
   return (
     <div className="tshirtDetails" onClick={onTshirtClick}>
-      <h6>{props.tshirt.name}</h6>
       <img src={props.tshirt.image} alt={props.tshirt.name} />
-      
+      <h6>{props.tshirt.name}</h6>
+      <h5>{props.tshirt.price} $</h5>
     </div>
   );
 }

@@ -1,3 +1,44 @@
+@import '../../styles/colors.scss';
+
 .tshirt {
-    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    margin: 12px auto;
+    align-items: flex-start;
+
+    img {
+        width: 300px;
+        padding-right: 12px;
+    }
+
+    .details {
+        border-left: 3px solid $border-color;
+        padding-left: 12px;
+
+        h3 {
+            font-size: 24px;
+        }
+
+        h4 {
+            margin-top: 12px;
+            font-weight: 300;
+            font-size: 28px;
+        }
+
+        .sizes {
+            display: flex;
+            gap: 12px;
+        }
+
+
+        .buttons-group {
+            justify-content: flex-start;
+            margin-top: 18px;
+
+            .positive,
+            .ghost {
+                font-size: 18px;
+            }
+        }
+    }
 }

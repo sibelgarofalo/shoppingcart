@@ -79,31 +79,41 @@ form {
     gap: 12px;
     justify-content: flex-end;
 
-    button {
-        font-size: 16px;
-        border-radius: 5px;
-        padding: 4px;
+}
 
-        &:hover {
-            cursor: pointer;
-        }
+button {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 4px;
+
+    &:hover {
+        cursor: pointer;
     }
+}
 
-    button.cancel {
-        background-color: $cancel-background;
+button.cancel {
+    background-color: $cancel-background;
 
-        &:hover {
-            background-color: white;
-            border: 2px solid $cancel-background;
-        }
-    }
-
-    button.positive {
-        background-color: $positive-background;
-    }
-
-    button.ghost {
-        border: 1px solid $border-color;
+    &:hover {
         background-color: white;
+        border: 2px solid $cancel-background;
+    }
+}
+
+button.positive {
+    background-color: $positive-background;
+    color: white;
+
+    &:hover {
+        background-color: lightgreen;
+    }
+}
+
+button.ghost {
+    border: 2px solid $border-color;
+    background-color: white;
+
+    &:hover {
+        background-color: gray;
     }
 }

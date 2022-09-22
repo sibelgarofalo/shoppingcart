@@ -2,7 +2,7 @@
     "tshirts": [
         {
             "id": 1,
-            "image": "assets/tshirt01.webp",
+            "image": "/assets/tshirt01.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -13,7 +13,7 @@
         },
         {
             "id": 2,
-            "image": "assets/tshirt02.webp",
+            "image": "/assets/tshirt02.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -24,7 +24,7 @@
         },
         {
             "id": 3,
-            "image": "assets/tshirt03.webp",
+            "image": "/assets/tshirt03.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -35,7 +35,7 @@
         },
         {
             "id": 4,
-            "image": "assets/tshirt04.webp",
+            "image": "/assets/tshirt04.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -46,7 +46,7 @@
         },
         {
             "id": 5,
-            "image": "assets/tshirt05.webp",
+            "image": "/assets/tshirt05.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -57,7 +57,7 @@
         },
         {
             "id": 6,
-            "image": "assets/tshirt06.webp",
+            "image": "/assets/tshirt06.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -68,7 +68,7 @@
         },
         {
             "id": 7,
-            "image": "assets/tshirt07.webp",
+            "image": "/assets/tshirt07.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -79,7 +79,7 @@
         },
         {
             "id": 8,
-            "image": "assets/tshirt08.webp",
+            "image": "/assets/tshirt08.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -90,7 +90,7 @@
         },
         {
             "id": 9,
-            "image": "assets/tshirt09.webp",
+            "image": "/assets/tshirt09.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -101,7 +101,7 @@
         },
         {
             "id": 10,
-            "image": "assets/tshirt10.webp",
+            "image": "/assets/tshirt10.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -112,7 +112,7 @@
         },
         {
             "id": 11,
-            "image": "assets/tshirt11.webp",
+            "image": "/assets/tshirt11.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -123,7 +123,7 @@
         },
         {
             "id": 12,
-            "image": "assets/tshirt12.webp",
+            "image": "/assets/tshirt12.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -134,7 +134,7 @@
         },
         {
             "id": 13,
-            "image": "assets/tshirt13.webp",
+            "image": "/assets/tshirt13.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -145,7 +145,7 @@
         },
         {
             "id": 14,
-            "image": "assets/tshirt14.webp",
+            "image": "/assets/tshirt14.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -156,7 +156,7 @@
         },
         {
             "id": 15,
-            "image": "assets/tshirt15.webp",
+            "image": "/assets/tshirt15.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -167,7 +167,7 @@
         },
         {
             "id": 16,
-            "image": "assets/tshirt16.webp",
+            "image": "/assets/tshirt16.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -178,7 +178,7 @@
         },
         {
             "id": 17,
-            "image": "assets/tshirt17.webp",
+            "image": "/assets/tshirt17.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -189,7 +189,7 @@
         },
         {
             "id": 18,
-            "image": "assets/tshirt18.webp",
+            "image": "/assets/tshirt18.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -200,7 +200,7 @@
         },
         {
             "id": 19,
-            "image": "assets/tshirt19.webp",
+            "image": "/assets/tshirt19.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -211,7 +211,7 @@
         },
         {
             "id": 20,
-            "image": "assets/tshirt20.webp",
+            "image": "/assets/tshirt20.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -222,7 +222,7 @@
         },
         {
             "id": 21,
-            "image": "assets/tshirt21.webp",
+            "image": "/assets/tshirt21.webp",
             "price": 19.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
@@ -231,13 +231,5 @@
                 "L"
             ]
         }
-
-
-
-
-
-
-
-
     ]
 }
