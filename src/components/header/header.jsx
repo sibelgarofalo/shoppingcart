@@ -12,6 +12,7 @@ function Header() {
   const onLoginClick = () => {
     navigate('/login');
   }
+ 
 
   return (
     <div className="header">
@@ -23,13 +24,13 @@ function Header() {
         {
           reduxState.isUserLoggedIn &&
           <NavLink to="/checkout">
-            You have: <strong>{reduxShoppingState.shoppingCart.items.length} items</strong>, total is: <strong>{(reduxShoppingState.total).toFixed(2)} $</strong>
+            You have: <strong>{reduxShoppingState.shoppingCart.items.length} items</strong>, total is: <strong>{(reduxShoppingState.total)} $</strong>
           </NavLink>
         }
       </div>
       <div className='buttons-group'>
         {reduxState.isUserLoggedIn &&
-          <button type='button' className='ghost'>LOGOUT</button>
+          <button type='button' className='ghost' onClick={onLogOutClick}>LOGOUT</button>
         }
         {!reduxState.isUserLoggedIn &&
           <button type='button' className='positive' onClick={onLoginClick}>LOGIN</button>
