@@ -8,11 +8,11 @@ function Header() {
   const reduxState = useSelector(state => state.auth);
   const reduxShoppingState = useSelector((state) => state.shopping);
   const navigate = useNavigate();
-
+  
   const onLoginClick = () => {
     navigate('/login');
   }
- 
+
 
   return (
     <div className="header">
@@ -30,7 +30,7 @@ function Header() {
       </div>
       <div className='buttons-group'>
         {reduxState.isUserLoggedIn &&
-          <button type='button' className='ghost' onClick={onLogOutClick}>LOGOUT</button>
+          <button type='button' className='ghost' onClick={onLoginClick}>LOGOUT</button>
         }
         {!reduxState.isUserLoggedIn &&
           <button type='button' className='positive' onClick={onLoginClick}>LOGIN</button>
