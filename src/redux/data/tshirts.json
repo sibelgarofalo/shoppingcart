@@ -14,7 +14,7 @@
         {
             "id": 2,
             "image": "/assets/tshirt02.webp",
-            "price": 19.99,
+            "price": 29.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
                 "S",
@@ -36,7 +36,7 @@
         {
             "id": 4,
             "image": "/assets/tshirt04.webp",
-            "price": 19.99,
+            "price": 24.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
                 "S",
@@ -58,7 +58,7 @@
         {
             "id": 6,
             "image": "/assets/tshirt06.webp",
-            "price": 19.99,
+            "price": 24.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
                 "S",
@@ -80,7 +80,7 @@
         {
             "id": 8,
             "image": "/assets/tshirt08.webp",
-            "price": 19.99,
+            "price": 29.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
                 "S",
@@ -102,7 +102,7 @@
         {
             "id": 10,
             "image": "/assets/tshirt10.webp",
-            "price": 19.99,
+            "price": 24.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
                 "S",
@@ -135,7 +135,7 @@
         {
             "id": 13,
             "image": "/assets/tshirt13.webp",
-            "price": 19.99,
+            "price": 29.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
                 "S",
@@ -157,7 +157,7 @@
         {
             "id": 15,
             "image": "/assets/tshirt15.webp",
-            "price": 19.99,
+            "price": 24.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
                 "S",
@@ -179,7 +179,7 @@
         {
             "id": 17,
             "image": "/assets/tshirt17.webp",
-            "price": 19.99,
+            "price": 24.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
                 "S",
@@ -190,7 +190,7 @@
         {
             "id": 18,
             "image": "/assets/tshirt18.webp",
-            "price": 19.99,
+            "price": 29.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
                 "S",
@@ -223,7 +223,7 @@
         {
             "id": 21,
             "image": "/assets/tshirt21.webp",
-            "price": 19.99,
+            "price": 29.99,
             "name": "MOUTH MEN'S TSHIRT",
             "sizes": [
                 "S",
