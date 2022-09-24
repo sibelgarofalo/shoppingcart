@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { resetPassword, login } from './actions';
 
-const initialState = {
+export const initialAuthState = {
     isUserLoggedIn: false,
     isLoading: false,
     isSuccess: false,
@@ -17,9 +17,12 @@ const initialState = {
 
 export const authSlice = createSlice({
     name: 'auth',
-    initialState,
+    initialState: initialAuthState,
     reducers: {
-
+        logout: (state, action) => {
+            state.user = initialAuthState.user;
+            state.isUserLoggedIn = false;
+        }
     },
     extraReducers: (builder) => {
         /** Reset password actions */
@@ -60,8 +63,5 @@ export const authSlice = createSlice({
 
     }
 })
-
-// Action creators are generated for each case reducer function
-// export const { increment, decrement, incrementByAmount } = counterSlice.actions
-
-export default authSlice.reducer
+export const { logout } = authSlice.actions;
+export default authSlice.reducer;

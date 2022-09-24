@@ -35,6 +35,16 @@
             td {
                 padding: 12px 15px;
             }
+
+            button {
+                margin: 0 6px;
+                width: 36px;
+
+                &:hover {
+                    background-color: white;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

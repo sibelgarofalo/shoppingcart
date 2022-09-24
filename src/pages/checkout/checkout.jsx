@@ -58,7 +58,7 @@ function Checkout() {
           </tbody>
           <tfoot>
             <tr>
-              <td colSpan="5">Total is <strong>{(reduxShoppingState.total).toFixed(2)} $</strong></td>
+              <td colSpan="5">Total is <strong>{(reduxShoppingState.shoppingCart.total).toFixed(2)} $</strong></td>
             </tr>
           </tfoot>
         </table>

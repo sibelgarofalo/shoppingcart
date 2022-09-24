@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import data from '../data/tshirts.json';
 
-const initialState = {
+export const initialShoppingState = {
     tshirts: [],
     shoppingCart: {
         total: 0,
@@ -17,7 +17,7 @@ const calculateTotal = (items) => {
 
 export const shoppingSlice = createSlice({
     name: 'shopping',
-    initialState,
+    initialState: initialShoppingState,
     reducers: {
         // load all the available tshirt
         loadTshirts: (state) => {
@@ -27,7 +27,7 @@ export const shoppingSlice = createSlice({
         addItemToShoppingCart: (state, action) => {
             state.shoppingCart.items.push(action.payload);
             // calculate total
-            state.total = calculateTotal(state.shoppingCart.items);
+            state.shoppingCart.total = calculateTotal(state.shoppingCart.items);
         },
         // add an item to the shopping cart
         removeItemFromShoppingCart: (state, action) => {
