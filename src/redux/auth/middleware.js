@@ -14,4 +14,9 @@ const authMiddleware = (store) => (next) => (action) => {
     next(action);
 }
 
+export const customMiddleware = (store) => (next) => (action) => {
+    console.log(action.type);
+    next(action);
+}
+
 export default authMiddleware;

@@ -3,7 +3,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { authSlice, initialAuthState } from './auth/slice';
 import { shoppingSlice, initialShoppingState } from './shopping/slice';
 
-import authMiddleware from './auth/middleware';
+import authMiddleware, { customMiddleware } from './auth/middleware';
 
 export const preloadAuthState = () => {
 
@@ -29,5 +29,5 @@ export const store = configureStore({
         shopping: shoppingSlice.reducer
     },
     preloadedState: preloadAuthState(),
-    middleware: (middlewares) => middlewares().concat(authMiddleware)
+    middleware: (middlewares) => middlewares().concat(authMiddleware).concat(customMiddleware)
 });
